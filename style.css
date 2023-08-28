@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Ubuntu:wght@300;400;700&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Ubuntu:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 *{
     margin: 0;
@@ -14,7 +14,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 p{
-    color: rgb(85,85,85);
+    color:black;
 }
 /* transition */
 a,btn{
@@ -210,4 +210,62 @@ a:hover{
 }
 .img-2:hover{
     background-color:rgb(98, 98, 253);
+}
+
+.sec-boxes{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+     
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    gap: 1rem;
+    font-family:'Irish Grover', cursive;
+    background-color: #f0f0f0;
+    border: 1px solid black ;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.box:hover {
+    transform: translateY(-5px);
+    background-color: rgb(98, 98, 253);
+  
+}
+.summary {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Maximum width for responsiveness */
+    margin: 3rem auto; /* Center horizontally */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.summary:hover{
+    transform: translateY(-5px);
+    background-color: rgb(98, 98, 253);
+
+}
+.sum-text{
+  font-family:'Irish Grover', cursive;
+  letter-spacing:0.1rem;
+}
+.sec-3-btn{
+    margin-top: 1rem;
 }
