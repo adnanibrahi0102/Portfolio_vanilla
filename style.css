@@ -269,3 +269,39 @@ a:hover{
 .sec-3-btn{
     margin-top: 1rem;
 }
+
+/* skills section */
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.skill-box{
+    border: 1px solid black;
+    padding: 1.3rem;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    text-align: center;
+    display: flex;
+    font-family:'Irish Grover', cursive;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+    
+   
+}
+.skill-box:hover{
+    transform: translateY(-5px);
+    background-color: rgb(98, 98, 253);
+}
+.skills-list,li{
+    list-style: none;
+    margin-top: 0.5rem;
+      
+}
