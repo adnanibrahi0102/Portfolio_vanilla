@@ -1,131 +1,134 @@
-       @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Ubuntu:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Ubuntu:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: 'Ubuntu', sans-serif;
+body {
+  font-family: "Ubuntu", sans-serif;
 }
-p{
-    color:black;
+p {
+  color: black;
 }
 /* transition */
-a,btn{
-    transition: all 300ms ease;
+a,
+btn {
+  transition: all 300ms ease;
 }
-nav,
-.navlinks{
-    display: flex;
-    
-}
-nav{
+.navigation,
+.navlinks {
+  display: flex;
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  
 }
-.navlinks{
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-    
+.navlinks {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
 }
-a{
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
 }
-a:hover{
-    color:gray;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color:rgb(181,181 ,181) ;
+a:hover {
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
-.logo{
-    font-size: 2rem;
-    font-weight: bold;
-    color:  #2965F1;
-    font-family: 'Irish Grover', cursive;
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2965f1;
+  font-family: "Irish Grover", cursive;
 }
-.log:hover{
-    cursor: default;
+.log:hover {
+  cursor: default;
 }
 
 /* Your existing styles for navigation, logo, and navlinks here */
 
 /* Styles for the menu toggle and hamburger icon */
 .menu-toggle {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .icon {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: all 0.3s;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: all 0.3s;
 }
 
 /* Hide the hamburger icon on screens wider than 768px */
 @media (min-width: 769px) {
-    .menu-toggle {
-        display: none;
-    }
+  .menu-toggle {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-    .navlinks {
-        display: none;
-    }
+  .navlinks {
+    display: none;
+  }
 
-    /* Show navigation links when menu is toggled */
-    .navlinks.menu-open {
-        display: block;
-       
-    }
+  /* Show navigation links when menu is toggled */
+  .navlinks.menu-open {
+    margin-top: 2rem;
+    height: 100%;
+    text-decoration: none;
+    border-bottom-left-radius: 50%;
+    display: block;
+    padding: 2rem;
+    background-color: #2965f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007396;
+  }
 
-    /* Rotate hamburger icon into a close icon when menu is toggled */
-    .icon.menu-open  {
-        transform: rotate(-45deg);
-    }
-    
+  /* Rotate hamburger icon into a close icon when menu is toggled */
+  .icon.menu-open {
+    transform: rotate(-45deg);
+  }
 }
 /* section container */
-.section-1{
-    display: flex;
-    flex-direction: column;
+.section-1 {
+  display: flex;
+  flex-direction: column;
 }
-.header-container, h1,h2{
-   text-align: center;
-   margin-top: 1rem;
-
+.header-container,
+h1,
+h2 {
+  text-align: center;
+  margin-top: 1rem;
 }
-.header-container,h2{
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Irish Grover', cursive;
-    color:  #2965F1;
+.header-container,
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Irish Grover", cursive;
+  color: #2965f1;
 }
-.header-container,h1{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    font-family: 'Irish Grover', cursive;
+.header-container,
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: "Irish Grover", cursive;
 }
-.headerimg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.headerimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.social-links{
+.social-links {
   display: flex;
   margin-right: 1.5rem;
   font-size: 1.7rem;
@@ -133,225 +136,242 @@ a:hover{
   gap: 0.5rem;
 
   justify-content: flex-start;
-  
 }
 
-.headerimg img{
-    margin-top: 3rem;
-    width: 300px;
-    height: 300px;
+.headerimg img {
+  margin-top: 3rem;
+  width: 300px;
+  height: 300px;
 }
-.btn-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    gap: 1rem;
+.btn-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 .btn-2 {
-    background-color: #2965F1;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 2px solid black;
-    font-size: 1.2rem;
-    font-weight: bold;
-    }
-.btn-1{
-    background-color:white;
-    color:rgb(40, 40, 208);
-    border: none;
-    padding: 10px 20px;
-    border: 2px solid  #2965F1;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    font-weight: bold;
+  background-color: #2965f1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid black;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-.btn-1:hover{
-    background-color: #2965F1;
-    color:white;
+.btn-1 {
+  background-color: white;
+  color: rgb(40, 40, 208);
+  border: none;
+  padding: 10px 20px;
+  border: 2px solid #2965f1;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-.btn-2:hover{
-    background-color: white;
-    color:  #2965F1;
-
+.btn-1:hover {
+  background-color: #2965f1;
+  color: white;
+}
+.btn-2:hover {
+  background-color: white;
+  color: #2965f1;
 }
 /* section 2 */
-.section2{
-    display: flex;
-    flex-direction: column;
-
+.section2 {
+  display: flex;
+  flex-direction: column;
 }
-.sec-2-heading{
-    margin-top: 3rem;
+.sec-2-heading {
+  margin-top: 3rem;
 }
-.sec-h2{
-    font-size: 1.3rem;
+.sec-h2 {
+  font-size: 1.3rem;
 }
-.sec-h1{
-    font-size: 1.5rem;
+.sec-h1 {
+  font-size: 1.5rem;
 }
-.sec-2-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-   
+.sec-2-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.img-2{
-   width: 300px;
-   height: 300px;
-    border: 1px solid black;
-    border-radius: 10px;
-   margin-top: 1rem;
+.img-2 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 1rem;
 }
-.img-2:hover{
-    background-color: #2965F1;
+.img-2:hover {
+  background-color: #2965f1;
 }
 
-.sec-boxes{
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-     
+.sec-boxes {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
-    gap: 1rem;
-    font-family:'Irish Grover', cursive;
-    background-color: #e4e1e1;
-    border: 1px solid black ;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  gap: 1rem;
+  font-family: "Irish Grover", cursive;
+  background-color: #e4e1e1;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Hover effect */
 .box:hover {
-    transform: translateY(-5px);
-    background-color:  #2965F1;
-  
+  transform: translateY(-5px);
+  background-color: #2965f1;
 }
 .summary {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center;
-    align-items: center;
-    max-width: 600px; /* Maximum width for responsiveness */
-    margin: 3rem auto; /* Center horizontally */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #e4e1e1;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center;
+  align-items: center;
+  max-width: 600px; /* Maximum width for responsiveness */
+  margin: 3rem auto; /* Center horizontally */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #e4e1e1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.summary:hover{
-    transform: translateY(-5px);
-    background-color:  #2965F1;
-
+.summary:hover {
+  transform: translateY(-5px);
+  background-color: #2965f1;
 }
-.sum-text{
-  font-family:'Irish Grover', cursive;
-  letter-spacing:0.1rem;
+.sum-text {
+  font-family: "Irish Grover", cursive;
+  letter-spacing: 0.1rem;
 }
-.sec-3-btn{
-    margin-top: 1rem;
+.sec-3-btn {
+  margin-top: 1rem;
 }
 
 /* skills section */
-.skills-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 3rem;
-    justify-content: center;
-    align-items: center;
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
 }
-.skill-box{
-    border: 1px solid black;
-    padding: 1.3rem;
-    border-radius: 10px;
-    width: 300px;
-   background-color: #e4e1e1;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 200px;
-    text-align: center;
-    display: flex;
-    font-family:'Irish Grover', cursive;
-    flex-direction: column;
-    transition: transform 0.3s, box-shadow 0.3s;
-    
-    
-   
+.skill-box {
+  border: 1px solid black;
+  padding: 1.3rem;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #e4e1e1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  text-align: center;
+  display: flex;
+  font-family: "Irish Grover", cursive;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.skill-box:hover{
-    transform: translateY(-5px);
-    background-color:  #2965F1;
+.skill-box:hover {
+  transform: translateY(-5px);
+  background-color: #2965f1;
 }
-.skills-list,li{
-    list-style: none;
-    margin-top: 0.5rem;
-      
+.skills-list,
+li {
+  list-style: none;
+  margin-top: 0.5rem;
 }
 
-.skill-icon-html { color: #E44D26; font-size: 1.1rem;font-weight: bold;}
-  .skill-icon-css { color: #2965F1; font-size: 1.1rem;font-weight: bold;}
-  .skill-icon-js { color: #F0DB4F; font-size: 1.1rem;font-weight: bold;}
-  .skill-icon-bootstrap { color: #7952B3;font-size: 1.1rem;font-weight: bold;}
-  .skill-icon-react { color: #61DAFB;font-size: 1.1rem;font-weight: bold; }
-  .skill-icon-dsa { color: #6CC24A;font-size: 1.1rem;font-weight: bold; }
-  .skill-icon-java { color: #007396;font-size: 1.1rem;font-weight: bold; }
+.skill-icon-html {
+  color: #e44d26;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.skill-icon-css {
+  color: #2965f1;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.skill-icon-js {
+  color: #f0db4f;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.skill-icon-bootstrap {
+  color: #7952b3;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.skill-icon-react {
+  color: #61dafb;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.skill-icon-dsa {
+  color: #6cc24a;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.skill-icon-java {
+  color: #007396;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 
+/* section projects */
+.section-4 {
+  margin-top: 3rem;
+}
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.project {
+  margin-top: 1rem;
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #e4e1e1;
+  padding: 0.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project:hover {
+  transform: translateY(-5px);
+  background-color: #2965f1;
+}
+.project-img {
+  width: 200px;
+  margin-top: 0.5rem;
+  height: 150px;
+  border-radius: 10px;
+}
 
-  /* section projects */
-  .section-4{
-    margin-top: 3rem;
-  }
-  .projects-container{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .project{
-       height: 250px;
-       width: 250px;
-       border-radius: 10px;
-       border: 1px solid black;
-       text-align: center;
-       background-color: #e4e1e1;
-       padding: 0.5rem;
-       transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .project:hover{
-    transform: translateY(-5px);
-    background-color: #2965F1;
-  }
- .project-img{
-    width: 200px;
-    margin-top: 0.5rem;
-    height: 150px;
-    border-radius: 10px;
- }
-
- .project-action{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
- }
+.project-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
