@@ -230,7 +230,7 @@ a:hover{
     height: 150px;
     gap: 1rem;
     font-family:'Irish Grover', cursive;
-    background-color: #f0f0f0;
+    background-color: #e4e1e1;
     border: 1px solid black ;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -253,7 +253,7 @@ a:hover{
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #e4e1e1;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -284,7 +284,7 @@ a:hover{
     padding: 1.3rem;
     border-radius: 10px;
     width: 300px;
-    background-color: #ccc;
+   background-color: #e4e1e1;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 200px;
     text-align: center;
@@ -305,3 +305,11 @@ a:hover{
     margin-top: 0.5rem;
       
 }
+
+.skill-icon-html { color: #E44D26; font-size: 1.1rem;font-weight: bold;}
+  .skill-icon-css { color: #2965F1; font-size: 1.1rem;font-weight: bold;}
+  .skill-icon-js { color: #F0DB4F; font-size: 1.1rem;font-weight: bold;}
+  .skill-icon-bootstrap { color: #7952B3;font-size: 1.1rem;font-weight: bold;}
+  .skill-icon-react { color: #61DAFB;font-size: 1.1rem;font-weight: bold; }
+  .skill-icon-dsa { color: #6CC24A;font-size: 1.1rem;font-weight: bold; }
+  .skill-icon-java { color: #007396;font-size: 1.1rem;font-weight: bold; }
