@@ -51,7 +51,7 @@ a:hover{
 .logo{
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(41, 41, 220);
+    color:  #2965F1;
     font-family: 'Irish Grover', cursive;
 }
 .log:hover{
@@ -111,7 +111,7 @@ a:hover{
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Irish Grover', cursive;
-    color: rgb(40, 40, 208);
+    color:  #2965F1;
 }
 .header-container,h1{
     font-size: 2.5rem;
@@ -149,7 +149,7 @@ a:hover{
     gap: 1rem;
 }
 .btn-2 {
-    background-color:rgb(40, 40, 208);
+    background-color: #2965F1;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -164,19 +164,19 @@ a:hover{
     color:rgb(40, 40, 208);
     border: none;
     padding: 10px 20px;
-    border: 2px solid rgb(40,40,208);
+    border: 2px solid  #2965F1;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: bold;
 }
 .btn-1:hover{
-    background-color:rgb(40, 40, 208) ;
+    background-color: #2965F1;
     color:white;
 }
 .btn-2:hover{
     background-color: white;
-    color: rgb(40, 40, 208);
+    color:  #2965F1;
 
 }
 /* section 2 */
@@ -209,7 +209,7 @@ a:hover{
    margin-top: 1rem;
 }
 .img-2:hover{
-    background-color:rgb(98, 98, 253);
+    background-color: #2965F1;
 }
 
 .sec-boxes{
@@ -240,7 +240,7 @@ a:hover{
 /* Hover effect */
 .box:hover {
     transform: translateY(-5px);
-    background-color: rgb(98, 98, 253);
+    background-color:  #2965F1;
   
 }
 .summary {
@@ -259,7 +259,7 @@ a:hover{
 }
 .summary:hover{
     transform: translateY(-5px);
-    background-color: rgb(98, 98, 253);
+    background-color:  #2965F1;
 
 }
 .sum-text{
@@ -298,7 +298,7 @@ a:hover{
 }
 .skill-box:hover{
     transform: translateY(-5px);
-    background-color: rgb(98, 98, 253);
+    background-color:  #2965F1;
 }
 .skills-list,li{
     list-style: none;
@@ -313,3 +313,45 @@ a:hover{
   .skill-icon-react { color: #61DAFB;font-size: 1.1rem;font-weight: bold; }
   .skill-icon-dsa { color: #6CC24A;font-size: 1.1rem;font-weight: bold; }
   .skill-icon-java { color: #007396;font-size: 1.1rem;font-weight: bold; }
+
+
+  /* section projects */
+  .section-4{
+    margin-top: 3rem;
+  }
+  .projects-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project{
+       height: 250px;
+       width: 250px;
+       border-radius: 10px;
+       border: 1px solid black;
+       text-align: center;
+       background-color: #e4e1e1;
+       padding: 0.5rem;
+       transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .project:hover{
+    transform: translateY(-5px);
+    background-color: #2965F1;
+  }
+ .project-img{
+    width: 200px;
+    margin-top: 0.5rem;
+    height: 150px;
+    border-radius: 10px;
+ }
+
+ .project-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+ }
