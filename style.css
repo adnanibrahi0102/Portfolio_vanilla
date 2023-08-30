@@ -375,3 +375,45 @@ li {
   gap: 1rem;
   margin-top: 1rem;
 }
+.section-5{
+ margin-top: 3rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.contact-form{
+  margin-top: 2rem;
+ 
+}
+form{
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #e4e1e1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 1.2rem;
+
+}
+ input{
+  padding: 0.7rem;
+  margin: 0.7rem;
+  border-radius: 10px;
+  width: 100%;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.sub-btn{
+  display: flex;
+  justify-content: center;
+}
