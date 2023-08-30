@@ -43,5 +43,9 @@ const sendEmail = () => {
             InputEmail.value = '';
             InputMessage.value = '';
         })
-        .catch(error => console.log(error));
+        .catch(error => {
+            // Show an alert with the error message
+            alert("⚠️ An error occurred while sending the email. Please try again later.");
+            console.log(error);
+        });
 };
