@@ -276,7 +276,7 @@ h1 {
 }
 .skill-box {
   border: 1px solid black;
-  padding: 1.3rem;
+  padding: 1.2rem;
   border-radius: 10px;
   width: 300px;
   background-color: #e4e1e1;
@@ -295,7 +295,7 @@ h1 {
 .skills-list,
 li {
   list-style: none;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
 }
 
 .skill-icon-html {
